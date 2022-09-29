@@ -1,0 +1,8 @@
+---
+- name: Setup ssh keys
+  hosts: all
+  become: yes
+
+  roles:
+    - role: docker
+      docker_users: ["ubuntu"]
